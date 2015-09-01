@@ -1,12 +1,9 @@
 
-python = python3
+python = python3.4
 
 bd = $(shell find . -name '__pycache__' -type d)
 
-.PHONY: test clean
-
-test:
-	$(python) setup.py test
+.PHONY: clean
 
 clean:
 	@rm --recursive --force $(bd)
