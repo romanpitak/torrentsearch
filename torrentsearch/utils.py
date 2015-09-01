@@ -6,9 +6,9 @@ size_units = {
     'KB': 1024 ** 1,
     'MB': 1024 ** 2,
     'GB': 1024 ** 3,
-    'KiB': 10 ** 3,
-    'MiB': 10 ** 6,
-    'GiB': 10 ** 9,
+    'KiB': 1024 ** 1,
+    'MiB': 1024 ** 2,
+    'GiB': 1024 ** 3,
 }
 
 
@@ -22,3 +22,7 @@ def human_sized(size):
 
 def text(element, selector):
     return [x.text_content().strip() for x in element.cssselect(selector)]
+
+
+def xtext(element, selector):
+    return [x.text_content().strip() for x in element.xpath(selector)]
