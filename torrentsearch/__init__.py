@@ -2,3 +2,4 @@
 
 from .IsoHunt.Site import Site as IsoHunt
 from .ThePirateBay.Site import Site as ThePirateBay
+from .TorrentzEu import TorrentzEu
